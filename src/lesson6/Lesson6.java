@@ -8,8 +8,9 @@ public class Lesson6 {
         System.out.println();
         int i = 1;
         for (int a = 1; a <= 100; a++) {
-            if (a % 2 == 0)
-            System.out.print(a + " ");
+            if (a % 2 == 0) {
+                System.out.print(a + " ");
+            }
         }
         System.out.println( );
 
