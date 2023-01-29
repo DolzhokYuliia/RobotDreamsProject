@@ -11,8 +11,24 @@ public class Lesson6 {
                 System.out.print(a + " ");
             }
         }
-        System.out.println( );
-
+        System.out.println();
+        long num1 = 0, num2 = 1, sum = 0;
+        System.out.print (num1 + " " + num2);
+        for (int j = 2; j <= 100; j++) {
+            sum = num1 + num2;
+            if (sum <= 100) {
+                System.out.print (" " + sum );
+                num1 = num2;
+                num2 = sum;
+            }
+        }
+        System.out.println();
+        int num = 7;
+        long factorial = 1;
+        for (int f = 1; f <= 7; f++){
+          factorial = factorial * f;
+        }
+        System.out.println(factorial);
     }
 }
 
