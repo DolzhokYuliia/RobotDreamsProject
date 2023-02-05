@@ -5,7 +5,7 @@ import java.util.Random;
 public class Main {
 
     public static void main(String[] args) {
-        int length= 20;
+        int length= 10;
         int arr[]= new int [length];
 
         Random random = new Random();
