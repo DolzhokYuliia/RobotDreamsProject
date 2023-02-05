@@ -8,6 +8,8 @@ public class Main {
         System.out.println(getCube(number1));
         int myNumber2 = (int)  number2;
         printMaxStars(myNumber2);
+        int task3 = 12;
+        printSymbol(task3);
 
     }
 
@@ -16,12 +18,18 @@ public class Main {
     }
 
     static void printMaxStars (int number){
-        for(int i = 0; i <= number; i++)
-            {
+        for(int i = 0; i <= number; i++) {
                 System.out.print("*");
             }
         System.out.println();
         }
+        static void printSymbol (int symbol){
+        for (int i =0; i <= symbol; i++){
+            System.out.print("D");
+        }
+            System.out.println();
+        }
+
     }
 
 
