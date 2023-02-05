@@ -9,7 +9,8 @@ public class Main {
         int myNumber2 = (int)  number2;
         printMaxStars(myNumber2);
         int task3 = 12;
-        printSymbol(task3);
+        char mySymbol = 'D';
+        printSymbol(mySymbol, task3);
 
     }
 
@@ -23,9 +24,9 @@ public class Main {
             }
         System.out.println();
         }
-        static void printSymbol (int symbol){
-        for (int i =0; i <= symbol; i++){
-            System.out.print("D");
+        static void printSymbol (char symbol, int printCount){
+        for (int i =0; i <= printCount; i++){
+            System.out.print(symbol);
         }
             System.out.println();
         }
