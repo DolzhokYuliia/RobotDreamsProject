@@ -25,7 +25,11 @@ public class Main {
         int min = Arrays.stream(myArray).min().getAsInt();
         System.out.println("Smallest of given array " + min);
 
+        int sum = Arrays.stream(myArray).sum();
+        System.out.println("Sum of array elements is: "+ sum);
 
+        double average = sum / myArray.length;
+        System.out.println("Average is: " + average);
     }
 }
 
