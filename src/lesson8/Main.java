@@ -55,10 +55,10 @@ public class Main {
     }
     public static int getAverageOfArray (int [] myArray){
         int aver = 0;
-        int sum =0;
+        int sum = 0;
         for (int i =0; i < myArray.length; i ++){
             sum += myArray [i];
-            aver = sum/ myArray.length;
+            aver = sum / myArray.length;
         }
         return aver;
     }
