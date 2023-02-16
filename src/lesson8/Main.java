@@ -9,8 +9,12 @@ public class Main {
         int[] myArray = getIntArray(length);
         int maxNumber = getMaxNumberOfArray(myArray);
         int minNumber = getMinNumberOfArray(myArray);
-        System.out.println(maxNumber);
-        System.out.println(minNumber);
+        int sumOfAllNumbers = getSumOfAllArrayElements(myArray);
+        int averageOfArray = getAverageOfArray(myArray);
+        System.out.println("Max value of the array is: " + maxNumber);
+        System.out.println("Min value of the array is: " + minNumber);
+        System.out.println("Sum of all array elements is: " + sumOfAllNumbers);
+        System.out.println("An average of the array is: " + averageOfArray);
     }
 
     public static int getMaxNumberOfArray(int[] myArray) {
@@ -41,7 +45,22 @@ public class Main {
             }
         }
         return min;
-
+    }
+    public static int getSumOfAllArrayElements (int [] myArray){
+        int sum = 0;
+        for (int i = 0; i < myArray.length; i++){
+            sum += myArray[i];
+        }
+        return sum;
+    }
+    public static int getAverageOfArray (int [] myArray){
+        int aver = 0;
+        int sum =0;
+        for (int i =0; i < myArray.length; i ++){
+            sum += myArray [i];
+            aver = sum/ myArray.length;
+        }
+        return aver;
     }
 }
 
