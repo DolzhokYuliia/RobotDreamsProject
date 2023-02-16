@@ -8,7 +8,9 @@ public class Main {
         int length = 10;
         int[] myArray = getIntArray(length);
         int maxNumber = getMaxNumberOfArray(myArray);
+        int minNumber = getMinNumberOfArray(myArray);
         System.out.println(maxNumber);
+        System.out.println(minNumber);
     }
 
     public static int getMaxNumberOfArray(int[] myArray) {
@@ -30,6 +32,16 @@ public class Main {
             System.out.print(myArray[i] + " ");
         }
         return myArray;
+    }
+    public static int getMinNumberOfArray (int [] myArray){
+        int min = myArray[0];
+        for (int i =1; i < myArray.length; i ++) {
+            if (myArray[i] < min) {
+                min = myArray[i];
+            }
+        }
+        return min;
+
     }
 }
 
