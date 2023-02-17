@@ -13,8 +13,8 @@ public class Main {
 
         System.out.println(student1);
 
-        student1.learn ();
-        student1.visitLessons ();
+        student1.learn();
+        student1.visitLessons();
 
         Teacher teacher1 = new Teacher();
         teacher1.name = "Banhu";
@@ -26,5 +26,15 @@ public class Main {
         System.out.println(teacher1);
         teacher1.teach();
         teacher1.assessment();
+
+        Array myArray = new Array();
+        myArray.length = 20;
+        myArray.bound = 234;
+        myArray.printArray();
+
+
+
+        System.out.println();
+        myArray.printArray (array);
     }
 }
