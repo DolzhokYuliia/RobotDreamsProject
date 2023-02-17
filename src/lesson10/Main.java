@@ -30,10 +30,9 @@ public class Main {
         Array myArray = new Array();
         myArray.length = 20;
         myArray.bound = 234;
+
+
         myArray.printArray();
-
-
-
         System.out.println();
         myArray.printArray (array);
     }
