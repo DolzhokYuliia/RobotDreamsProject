@@ -20,9 +20,10 @@ public class ArrayHandler {
         return array;
     }
     public int  getArraySortedToMax (int [] array){
+       for (int i = 0; i < array.length; i++) {
 
 
-        }
+    }
        return array;
     }
 }
