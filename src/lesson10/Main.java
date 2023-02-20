@@ -11,10 +11,10 @@ public class Main {
         student1.numberOfGroup = 257;
         student1.gradePointAverage = 79;
 
-        System.out.println(student1);
+        System.out.println(student1.toString());
 
-        student1.learn ();
-        student1.visitLessons ();
+        student1.learn();
+        student1.visitLessons();
 
         Teacher teacher1 = new Teacher();
         teacher1.name = "Banhu";
@@ -23,8 +23,18 @@ public class Main {
         teacher1.subject = "Math";
         teacher1.scheduleTime = "9-14:00 every day, excluding Saturday,Sunday";
 
-        System.out.println(teacher1);
+        System.out.println(teacher1.toString());
         teacher1.teach();
         teacher1.assessment();
+
+        ArrayHandler arrayHandler = new ArrayHandler();
+        int [] array = arrayHandler.generateRandomArray(10,56);
+        arrayHandler.printArray(array);
+        System.out.println();
+        array = arrayHandler.getArraySortedToMax(array);
+        arrayHandler.printArray(array);
+        System.out.println();
+        array = arrayHandler.getArraySortedToMin(array);
+        arrayHandler.printArray(array);
     }
 }
