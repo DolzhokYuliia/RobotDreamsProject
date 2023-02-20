@@ -33,5 +33,8 @@ public class Main {
         System.out.println();
         array = arrayHandler.getArraySortedToMax(array);
         arrayHandler.printArray(array);
+        System.out.println();
+        array = arrayHandler.getArraySortedToMin(array);
+        arrayHandler.printArray(array);
     }
 }
