@@ -28,7 +28,10 @@ public class Main {
         teacher1.assessment();
 
         ArrayHandler arrayHandler = new ArrayHandler();
-        arrayHandler.printArray(arrayHandler.generateRandomArray(10, 56));
-        arrayHandler.getArraySortedToMax();
+        int [] array = arrayHandler.generateRandomArray(10,56);
+        arrayHandler.printArray(array);
+        System.out.println();
+        array = arrayHandler.getArraySortedToMax(array);
+        arrayHandler.printArray(array);
     }
 }
